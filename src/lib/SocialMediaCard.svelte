@@ -26,7 +26,7 @@
 			link: `https://instagram.com/${username}`
 		},
 		twitter: {
-			css: 'bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600',
+			css: 'bg-gradient-to-r from-stone-900 to-stone-950',
 			icon: Twitter,
 			link: `https://twitter.com/${username}`
 		},
@@ -65,6 +65,21 @@
 	class={`w-full h-20 rounded-2xl flex flex-row items-center shadow-lg content-center gap-2 justify-center hover:scale-[1.02] duration-500 transition-transform ${css}`}
 	target="_blank"
 >
-	<svelte:component this={icon} class="h-8 w-8 z-10 text-white" />
+	{#if socialMedia === 'twitter'}
+		<svg
+			class="h-8 w-8 z-10 text-white"
+			xmlns="http://www.w3.org/2000/svg"
+			height="1em"
+			viewBox="0 0 512 512"
+		>
+			<path
+				fill="currentColor"
+				d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+			/></svg
+		>
+	{:else}
+		<svelte:component this={icon} class="h-8 w-8 z-10 text-white" />
+	{/if}
+
 	<span class="font-semibold z-10 text-white">@{username}</span>
 </a>
