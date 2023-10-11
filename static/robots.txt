@@ -1,2 +1,53 @@
 User-Agent: *
 Allow: /
+
+
+package ventamascotas;
+import java.util. Scanner;
+public class VentaMascotas (
+static int clave = 1;
+static String nombre = "jaula";
+static int precio = 100;
+static int existencia = 5;
+pubiic static void main(Stringil args) {
+char respCompra = 's';
+int cuantos 1 = 0;
+int claveComprar;
+int totalFactura = 0;
+int totalProducto 1 = 0;
+int totalCuantos 1 = 0;
+int finalProducto 1 = 0;
+Scanner entrada = new Scanner(System.in);
+System.out.printin("Compras de productos");
+System.out.printin(" LOS PRODUCTOS EN VENTA SON : ");
+System. out.printin(*'*);
+do {
+System. out. printf%5s%15s%15s %13s", "ID", "PRODUCTO", "EXISTENCIA", "PRECIO");
+System.out.printin();
+System.out.printf("%5s %15s%15s %13s", clave, nombre, existencia, precio);
+System.out.printin();
+Sysiem.oui.printin ("Teciea la clave dei producio a comprar :");
+claveComprar = entrada.nextint();
+if (claveComprar == 1) {
+System.out.printin("CUANTOS DESEA COMPRAR: ");
+cuantos1 = entrada.nextint();
+totalProducto1 = cuantos 1 * precio;
+totalCuantos1 = cuantos 1 + totalCuantos1;
+finalProducto 1 = totalProducto1 + finalProducto 1;
+totalFactura = totalFactura + totalProducto1;
+System.out.printin ("Desea comprar mas? s/n");
+respCompra = entrada.next().charAt(U);
+: While respCompra == 's' || respCompra == 'S');
+System.out.printin(*
+SU COMPRA HA CONCLUIDO, SE EMITIRÁ FACTURA ");
+Sysiem.oui.printin(*nin
+CARRITO DE COMPRAS inin ");
+System.out.printf(*%5s %15s %15s %13s", "ID", "PRODUCTO", "CANTIDAD", "TOTAL");
+System.out.printin(*'*);
+if (cuantos1 1= 0) {
+System.out printf("%%5s %15s %15s %13s", clave, nombre, totalCuantos 1, finalProducto1);
+リー
+System.out.printin();
+System.out.printin ("lnln TOTAL DE SU COMPRA: " + totalFactura);
+Y// del método main
+Y! de la clase
