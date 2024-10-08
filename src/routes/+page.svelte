@@ -33,5 +33,5 @@
 	<SocialMediaCard socialMedia="threads" username="quique.rmn" />
 	<SocialMediaCard socialMedia="twitter" username="quique_rmn" />
 	<SocialMediaCard socialMedia="discord" username="quique.rmn" discordid="491683305897459722" />
-	<SocialMediaCard socialMedia="github" username="ZorvShadow" />
+	<SocialMediaCard socialMedia="github" username="quiquermn" />
 </div>
